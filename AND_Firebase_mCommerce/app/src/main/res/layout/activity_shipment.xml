@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fiftyfive.and_firebase_mcommerce.Shipment"
+    android:weightSum="1">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Shipment" />
+
+    <TextView
+        android:id="@+id/adressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="91dp"
+        android:layout_below="@+id/my_toolbar"
+        android:text="Select a shipment adress:"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/adressesGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="126dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/adress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 rue d'Athènes, 75009 PARIS" />
+
+        <RadioButton
+            android:id="@+id/adress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 rue d'Athènes, 75009 PARIS" />
+
+        <RadioButton
+            android:id="@+id/adress3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 place de l'Opéra, 78002 PARIS" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/adressLabel"
+        android:layout_marginBottom="256dp"
+        android:text="Select a shipment method:"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/shipmentsGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="138dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/shipment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colis simple" />
+
+        <RadioButton
+            android:id="@+id/shipment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colissimo" />
+
+        <RadioButton
+            android:id="@+id/shipment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chronopost" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/paymentButton"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="15dp"
+        android:text="Pay"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

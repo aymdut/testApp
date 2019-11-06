@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Basket">
+
+    <item
+        android:id="@+id/action_informations"
+        android:icon="@drawable/ic_info_32"
+        android:title="@string/action_informations"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Legal, should always be in the overflow -->
+    <item
+        android:id="@+id/action_legal"
+        android:title="@string/action_legal"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">55 Firebase m-Commerce</string>
+
+    <string name="action_cart">My Cart</string>
+    <string name="action_informations">Informations</string>
+    <string name="action_legal">Conditions of Use</string>
+
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+
+    <string name="default_notification_channel_id">my_default_channel</string>
+
+</resources>

@@ -1,0 +1,88 @@
+{
+  
+  "users": {
+    "D9ZD4Z8BUkcsHQucH0Iwv18L1zo2": {
+      "mail": "fh.khoury@gmail.com",
+      "name": "Francesco"
+    },
+    "bvKNisBnkAgFSbVDPVkiw9fSCXS2": {
+      "mail": "a@a.com",
+      "name": "La taille"
+    }
+  },  
+  
+  "products": {
+    "786936215595": {
+      "name": "SONY Playstation 4 - 500 Go Slim",
+      "brand": "Sony",
+      "variant": "234",
+      "category": "Video Games",
+      "description": [
+       "- Plate-forme : PlayStation 4",
+       "- Edition : Slim 500G",
+       "- Des couleurs riches et éclatantes avec les graphismes HDR d’une qualité exceptionnelle."
+      ],
+      "isDiscounted": false,
+      "price": 300.00,
+      "currency": "EUR"
+    }, 
+    "987606549647": {
+      "name": "Pendentif Sentiment",
+      "brand": "Mauboussin",
+      "variant": "786",
+      "category": "Jewelery",
+      "description": [
+       "- blablabla"
+      ],
+      "isDiscounted": true,
+      "originalPrice": 1500.00,
+      "price": 1000.00,
+      "currency": "EUR",
+      "couponNumber": "MAUBOUSSIN30"
+    }
+  },
+  
+  "orders": {
+    "1234abcd5678": {
+      "orderTimestamp": 1501556400,
+      "nbOfArticles": 3,
+      "Articles": {
+        "786936215595": {
+          "quantity": 2
+        },  
+        "987606549647": {
+          "quantity": 1
+        } 
+      },
+      "revenue": 1600.00,
+      "tax": 320.00,
+      "currency": "EUR",
+      "shipping": "La Poste - Colissimo",
+      "deliveryDate": 1501797600 
+    }
+  },
+  
+  
+  "carts": {
+    "D9ZD4Z8BUkcsHQucH0Iwv18L1zo2": {
+      "nbOfArticles": 1,
+      "Articles": {
+        "786936215595": {
+          "quantity": 1
+        }
+      },
+      "sub-total": 300.00,
+      "currency": "EUR"
+    }
+  },
+  
+  "categories": {
+    "Video Games":[
+      786936215595
+    ], 
+    "Jewelry": [
+      987606549647
+    ]
+  }
+  
+}

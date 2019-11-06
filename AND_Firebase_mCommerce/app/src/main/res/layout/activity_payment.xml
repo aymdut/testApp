@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fiftyfive.and_firebase_mcommerce.Payment"
+    android:weightSum="1">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Payment" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="92dp"
+        android:text="Select a payment method:"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/paymentGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="127dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="137dp">
+
+        <RadioButton
+            android:id="@+id/payment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visa, Master Card, CB" />
+
+        <RadioButton
+            android:id="@+id/payment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="American Express" />
+
+        <RadioButton
+            android:id="@+id/payment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayPal" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirmationButton"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="12dp"
+        android:layout_above="@+id/paymentGroup"
+        android:text="Confirm"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
